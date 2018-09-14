@@ -68,7 +68,7 @@ main (int argc, char **argv)
 
   opterr = 0;
 
-  while ((c = getopt (argc, argv, "l:dsn:b:h")) != -1)
+  while ((c = getopt (argc, argv, "l:dxn:b:h")) != -1)
     switch (c)
       {
       case 'l':
@@ -105,6 +105,7 @@ main (int argc, char **argv)
           fprintf (stderr,
                    "Unknown option character `\\x%x'.\n",
                    optopt);
+        usage(0, NULL);
         return 1;
       default:
         abort ();
