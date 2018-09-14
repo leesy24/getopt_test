@@ -114,7 +114,7 @@ main (int argc, char **argv)
           lflag, lvalue);
 
   printf ("dflag = %d, xflag = %d\n",
-          dflag, sflag);
+          dflag, xflag);
 
   printf ("nflag = %d, nvalue = %s\n",
           nflag, nvalue);
